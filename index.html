@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лабораторная работа N1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Лабораторная работа N1</h1>
+		<p>ФИО: Слабоус Никита Дмитриевич</p>
+		<p>Группа: P3230</p>
+		<p>Вариант: 22723</p>
+	</header>
+	<table>
+	<tr>
+		<td>
+			<canvas id="graph" width="400" height="400">
+
+		    </canvas>
+	    </td>
+		<td>
+			<form id="point-form">
+				<label for="x">X</label>
+				<select id="x" name="x">
+					<option value="-4">-4</option>
+					<option value="-3">-3</option>
+					<option value="-2">-2</option>
+					<option value="-1">-1</option>
+					<option value="0">0</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<label for="y">Y</label>
+				<input type="text" id="y" name="y">
+				<label>R:</label>
+				<input type="radio" name="r" value="1">1
+				<input type="radio" name="r" value="1.5">1.5
+				<input type="radio" name="r" value="2">2
+				<input type="radio" name="r" value="2.5">2.5
+				<input type="radio" name="r" value="3">3
+				<button type="submit">Проверить</button>
+			</form>
+		</td>
+	</tr>
+</table>
+    <table id="results-table">
+    <thead>
+	    <tr>
+		    <th>X</th>
+		    <th>Y</th>
+		    <th>R</th>
+		    <th>Результат</th>
+			<th>Дата и время</th>
+	    </tr>
+    </thead>
+
+<tbody id="results-body">
+
+</tbody>
+</table>
+	<script src="script.js"></script>
+</body>
+
+</html>
+
